@@ -1,6 +1,6 @@
-# Kinoblue
+# `desktop`
 
-My personal Fedora Kinoite + Silverblue image, soon to be a separate base image soon!
+My personal Fedora Kinoite + Silverblue image.
 
 ## Features
 
@@ -28,7 +28,7 @@ My personal Fedora Kinoite + Silverblue image, soon to be a separate base image 
 sudo docker run --rm --privileged --volume .:/build-container-installer/build --security-opt label=disable --pull=newer \
     ghcr.io/jasonn3/build-container-installer:latest \
     IMAGE_REPO=ghcr.io/theycallhermax \
-    IMAGE_NAME=kinoblue \
+    IMAGE_NAME=desktop \
     IMAGE_TAG=latest \
     IMAGE_SIGNED=true \
     VERSION=41 \
@@ -44,6 +44,6 @@ The output file will be `deploy.iso` file in the same directory you have ran the
 > You are running the image **temporary storage** and is deleted when you shut down the container.
 
 ```sh
-docker pull ghcr.io/theycallhermax/kinoblue:latest
-docker run --privileged -it ghcr.io/theycallhermax/kinoblue:latest /usr/lib/systemd/systemd rhgb --system
+docker pull ghcr.io/theycallhermax/desktop:latest
+docker run --privileged -it ghcr.io/theycallhermax/desktop:latest /usr/lib/systemd/systemd rhgb --system
 ```
