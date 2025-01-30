@@ -1,0 +1,3 @@
+[org.gnome.Ptyxis]
+restore-session=false
+restore-window-size=false
