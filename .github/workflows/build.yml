@@ -62,7 +62,6 @@ jobs:
           # By default, it should generate "latest" and "latest.(date here)".
           tags: |
             type=raw,value=latest
-            type=raw,value=41
             type=sha,enable=${{ github.event_name == 'pull_request' }}
             type=ref,event=pr
           labels: |
